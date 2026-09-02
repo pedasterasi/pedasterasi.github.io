@@ -3,64 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedasterasi — Blog</title>
+  <meta name="description" content="Pedas Terasi is an indie game-development learning journal: experiments, playable builds, and honest notes from the process.">
+  <title>Pedas Terasi — Game Dev Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#journal">Skip to journal</a>
   <header class="site-header">
-    <div class="container">
-      <a class="site-name" href="/">Pedasterasi</a>
-      <p class="tagline">Notes, ideas, and small discoveries.</p>
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="Pedas Terasi home"><span class="brand-mark" aria-hidden="true">PT</span><span>Pedas Terasi</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#journal">Journal</a><a href="#now">Now</a><a class="nav-cta" href="posts/first-post.html">Start here <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
   </header>
-
-  <main class="container">
-    <section class="intro">
-      <h1>Blog</h1>
-      <p>A simple place for writing.</p>
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Independent game development</p>
+        <h1 id="hero-title">Making tiny worlds,<br><em>one honest note</em> at a time.</h1>
+        <p class="hero-intro">A learning log for building games in Unity: the experiments that work, the strange bugs that do not, and every playable step between them.</p>
+        <div class="hero-actions"><a class="button button-primary" href="posts/first-post.html">Read the first devlog <span aria-hidden="true">↓</span></a><a class="text-link" href="#now">What I’m making now <span aria-hidden="true">→</span></a></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div><div class="sprout sprout-one"></div><div class="sprout sprout-two"></div><div class="pixel pixel-one"></div><div class="pixel pixel-two"></div><div class="pixel pixel-three"></div><p class="art-label">BUILDING IN PUBLIC<br><span>2026 — ∞</span></p></div>
     </section>
-
-    <section class="posts" id="posts"></section>
+    <section class="now-section" id="now" aria-labelledby="now-title">
+      <div class="shell now-grid"><div><p class="eyebrow"><span></span> Currently exploring</p><h2 id="now-title">A small game,<br>with room to grow.</h2></div>
+        <div class="now-details"><p>I’m learning the craft one system at a time: how a character feels to move, how a world gives feedback, and how an unfinished idea slowly becomes a place worth visiting.</p><dl class="focus-list"><div><dt>Toolbox</dt><dd>Unity · C# · Blender</dd></div><div><dt>Focus</dt><dd>Feel, systems &amp; small stories</dd></div><div><dt>Cadence</dt><dd>Notes whenever there’s something real to share</dd></div></dl></div>
+      </div>
+    </section>
+    <section class="journal shell" id="journal" aria-labelledby="journal-title">
+      <div class="section-heading"><div><p class="eyebrow"><span></span> The journal</p><h2 id="journal-title">Notes from the workbench.</h2></div><p class="entry-count">01 entry so far</p></div>
+      <article class="feature-entry"><a class="entry-image image-first" href="posts/first-post.html" aria-label="Read Devlog 001: Starting somewhere"></a><div class="entry-content"><p class="entry-meta"><time datetime="2026-09-02">02 Sep 2026</time><span>·</span> Devlog 001</p><h3><a href="posts/first-post.html">Starting somewhere: why I’m making games in public</a></h3><p>This is the beginning of a long experiment: less pressure to have the answers, more space to show the process, share the small wins, and learn out loud.</p><a class="arrow-link" href="posts/first-post.html">Read devlog <span aria-hidden="true">→</span></a></div></article>
+      <div class="future-entries"><p><span>Next notes</span> Movement feel · First playable build · Finding a visual language</p></div>
+    </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Pedasterasi</p>
-    </div>
-  </footer>
-
-  <script>
-    const posts = [
-      {
-        date: "2026-09-02",
-        dateText: "September 2, 2026",
-        title: "My first post",
-        text: "This is a short introduction to my new blog.",
-        url: "posts/first-post.html"
-      },
-      {
-        date: "2026-08-20",
-        dateText: "August 20, 2026",
-        title: "Keep it simple",
-        text: "A blog does not need comments, ads, or complicated software.",
-        url: "posts/keep-it-simple.html"
-      }
-    ];
-
-    function createPost(post) {
-      return `
-        <article class="post">
-          <time datetime="${post.date}">${post.dateText}</time>
-          <h2><a href="${post.url}">${post.title}</a></h2>
-          <p>${post.text}</p>
-          <p><a href="${post.url}">Read post →</a></p>
-        </article>
-      `;
-    }
-
-    document.getElementById("posts").innerHTML =
-      posts.map(createPost).join("");
-  </script>
+  <footer class="site-footer"><div class="shell footer-inner"><p><span class="brand-mark small" aria-hidden="true">PT</span> Pedas Terasi</p><p>Made slowly, with curiosity. © 2026</p></div></footer>
 </body>
 </html>
