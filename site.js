@@ -1,4 +1,5 @@
 (function () {
+  const postList = (() => { try { const saved = JSON.parse(localStorage.getItem("pedas-terasi-post-manager")); return Array.isArray(saved) ? saved : posts; } catch { return posts; } })();
   const postUrl = (post) => `posts/post.html?post=${encodeURIComponent(post.slug)}`;
   const cover = (post) => post.image ? `<a class="post-cover is-image" href="${postUrl(post)}" aria-label="Read ${post.title}"><img src="${post.image}" alt="${post.imageAlt || ""}"></a>` : `<a class="post-cover cover-${post.cover}" href="${postUrl(post)}" aria-label="Read ${post.title}"></a>`;
   const card = (post, index) => `
@@ -18,12 +19,12 @@
   const count = document.querySelector("[data-note-count]");
   if (!list || !filters) return;
 
-  const tags = [...new Set(posts.flatMap((post) => post.tags))];
+  const tags = [...new Set(postList.flatMap((post) => post.tags))];
   let activeTag = "All";
   const render = () => {
-    const visiblePosts = activeTag === "All" ? posts : posts.filter((post) => post.tags.includes(activeTag));
+    const visiblePosts = activeTag === "All" ? postList : postList.filter((post) => post.tags.includes(activeTag));
     list.innerHTML = visiblePosts.map(card).join("") || `<p class="empty-state">No notes here yet.</p>`;
-    count.textContent = activeTag === "All" ? `${posts.length} notes` : `${visiblePosts.length} note${visiblePosts.length === 1 ? "" : "s"} · ${activeTag}`;
+    count.textContent = activeTag === "All" ? `${postList.length} notes` : `${visiblePosts.length} note${visiblePosts.length === 1 ? "" : "s"} · ${activeTag}`;
     filters.querySelectorAll("button").forEach((button) => {
       const selected = button.dataset.tag === activeTag;
       button.classList.toggle("is-active", selected);

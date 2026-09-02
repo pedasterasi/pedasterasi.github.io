@@ -1,6 +1,8 @@
 # Posting a new note
 
-You only need to edit **`posts-data.js`**.
+The easiest way to write, edit, or delete posts locally is to open **`new-post.html`** (Post Maker). It keeps changes in your browser until you download the updated `posts-data.js` file and upload it to GitHub.
+
+You can also edit **`posts-data.js`** directly.
 
 1. Copy one complete post block inside the `posts` list.
 2. Paste it at the very top, under `const posts = [`.
@@ -19,6 +21,19 @@ imageAlt: "A small character standing in a green field",
 ```
 
 Put your image in an `images` folder at the top of the website. If you leave out `image`, the illustrated cover stays in place.
+## Putting content inside the note body
+
+In Post Maker, put these on their own line wherever you want them to appear in the note. Leave a blank line before and after each one.
+
+```text
+[image: ../images/my-game.jpg | A character walking through a forest | Early forest test]
+
+[link: See the game page | https://example.com]
+
+[unity: ../games/my-first-game/index.html | My first playable game | Use arrow keys to move.]
+```
+
+The image, link, or Unity game will appear in that exact position between your paragraphs.
 ## Content types you can use
 
 ### Normal paragraph
