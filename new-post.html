@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple helper for writing a new Pedas Terasi blog post.">
+  <title>Post Maker — Pedas Terasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="maker-page">
+  <header class="site-header"><div class="shell header-inner"><a class="brand" href="./"><span class="brand-mark">PT</span><span>Pedas Terasi</span></a><nav class="site-nav" aria-label="Main navigation"><a href="./">Home</a><a href="./#notes">All notes</a><a href="new-post.html" aria-current="page">Post maker</a></nav></div></header>
+  <main class="shell maker-shell">
+    <section class="maker-intro"><p class="eyebrow">Post maker</p><h1>Write a new note.</h1><p>Fill in the form, then copy the generated post into <code>posts-data.js</code>. Put it at the top of the <code>posts</code> list and publish.</p></section>
+    <div class="maker-layout">
+      <form class="maker-form" data-post-form>
+        <div class="form-row"><label>Title<input name="title" required placeholder="What I learned from..." autocomplete="off"></label><label>Date<input name="date" type="date" required></label></div>
+        <label>Short summary<textarea name="summary" required rows="3" placeholder="A short sentence shown on the post card."></textarea></label>
+        <div class="form-row"><label>Tags <small>Separate with commas</small><input name="tags" placeholder="Game dev, Unity, Learning"></label><label>Illustrated cover<select name="cover"><option value="one">Cover one</option><option value="two">Cover two</option><option value="three">Cover three</option><option value="four">Cover four</option></select></label></div>
+        <details class="optional-fields"><summary>Optional post-card image</summary><div class="details-content"><label>Image path<input name="image" placeholder="images/my-game.jpg"></label><label>Image description<input name="imageAlt" placeholder="A small character in a forest"></label></div></details>
+        <label>Your note <small>Leave a blank line between paragraphs. Start a line with <code># </code> for a heading, or <code>&gt; </code> for a quote.</small><textarea name="body" required rows="14" placeholder="Write your first paragraph here.&#10;&#10;# A small heading&#10;&#10;Write another paragraph here.&#10;&#10;> A memorable line can become a quote."></textarea></label>
+        <details class="optional-fields"><summary>Optional link</summary><div class="details-content form-row"><label>Link label<input name="linkLabel" placeholder="See my game"></label><label>Link URL<input name="linkUrl" type="url" placeholder="https://..."></label></div></details>
+        <details class="optional-fields"><summary>Optional Unity WebGL build</summary><div class="details-content"><label>Build path<input name="unitySrc" placeholder="../games/my-first-game/index.html"></label><label>Build title<input name="unityTitle" placeholder="My first playable game"></label><label>Small instruction or caption<input name="unityCaption" placeholder="Use arrow keys to move."></label></div></details>
+        <button class="generate-button" type="submit">Generate my post <span>→</span></button>
+      </form>
+      <aside class="maker-output"><div class="output-heading"><div><p class="eyebrow">Your post entry</p><p>Copy this into <code>posts-data.js</code></p></div><button type="button" class="copy-button" data-copy disabled>Copy</button></div><textarea data-output readonly aria-label="Generated post entry">Your finished post entry will appear here.</textarea><p class="copy-note" data-copy-note></p></aside>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><p>Pedas Terasi</p><p>Made slowly, with curiosity. © 2026</p></div></footer>
+  <script src="post-generator.js"></script>
+</body>
+</html>
