@@ -74,6 +74,8 @@ const posts = [
         "type": "p",
         "text": "P.S. for me in the next year or two, thanks me later"
       }
-    ]
+    ],
+    "image": "images/1.jpg",
+    "imageAlt": "Gamescom Crowd"
   }
 ];
