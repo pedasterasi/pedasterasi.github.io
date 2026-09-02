@@ -19,3 +19,8 @@
 .post-picker-row{display:flex;align-items:end;gap:12px;padding:13px;border:1px solid var(--line);background:var(--paper-dark)}.post-picker-row>label{flex:1}.delete-current-button{padding:9px 10px;border:1px solid var(--peach);border-radius:2px;background:#fff;color:var(--peach);font:12px var(--sans);font-weight:700;cursor:pointer;white-space:nowrap}.delete-current-button:hover{background:var(--peach);color:#fff}@media(max-width:500px){.post-picker-row{align-items:stretch;flex-direction:column}.delete-current-button{width:100%}}
 
 .body-block-help{display:grid;gap:5px;padding:13px 14px;border-left:3px solid var(--leaf);background:var(--paper-dark);color:var(--soft);font-size:12px;line-height:1.45}.body-block-help strong{color:var(--ink)}.body-block-help code{font:11px var(--mono);color:var(--ink)}.article-image{margin:35px 0}.article-image img{display:block;width:100%;max-height:600px;object-fit:cover;border-radius:2px}.article-image figcaption{margin-top:8px;color:var(--soft);font-size:12px;line-height:1.45}
+
+.build-button{padding:7px 10px;border:1px solid var(--ink);border-radius:2px;background:var(--ink);color:#fff;font:12px var(--sans);font-weight:700;cursor:pointer}.build-button:disabled{opacity:.5;cursor:not-allowed}.build-note{margin:12px 0 0;color:var(--soft);font-size:11px;line-height:1.45}
+
+/* Keep every post title aligned with its reading column */
+.post-header{width:min(720px,100%);max-width:none;margin:0 auto;padding:82px 24px 48px}@media(max-width:650px){.post-header{padding:58px 18px 38px}}
