@@ -1,7 +1,5 @@
 # Posting a new note
 
-The easiest way to write, edit, or delete posts locally is to open **`new-post.html`** (Post Maker). It keeps changes in your browser until you download the updated `posts-data.js` file and upload it to GitHub.
-
 You can also edit **`posts-data.js`** directly.
 
 1. Copy one complete post block inside the `posts` list.

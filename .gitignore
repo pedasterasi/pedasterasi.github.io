@@ -1,0 +1,3 @@
+# Local-only writing helper — never publish these files.
+new-post.html
+post-generator.js
