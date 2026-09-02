@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name — Blog</title>
+  <title>Pedasterasi — Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="site-name" href="/">Your Name</a>
+      <a class="site-name" href="/">Pedasterasi</a>
       <p class="tagline">Notes, ideas, and small discoveries.</p>
     </div>
   </header>
@@ -20,31 +21,46 @@
       <p>A simple place for writing.</p>
     </section>
 
-    <section class="posts">
-      <article class="post">
-        <time datetime="2026-09-02">September 2, 2026</time>
-        <h2><a href="#first-post">My first post</a></h2>
-        <p>
-          This is a short introduction to my new blog. I’ll write here about
-          things I am learning, making, and thinking about.
-        </p>
-      </article>
-
-      <article class="post">
-        <time datetime="2026-08-20">August 20, 2026</time>
-        <h2><a href="#second-post">Keep it simple</a></h2>
-        <p>
-          A blog does not need comments, ads, or complicated software.
-          Plain text and a good idea are enough.
-        </p>
-      </article>
-    </section>
+    <section class="posts" id="posts"></section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Your Name</p>
+      <p>© 2026 Pedasterasi</p>
     </div>
   </footer>
+
+  <script>
+    const posts = [
+      {
+        date: "2026-09-02",
+        dateText: "September 2, 2026",
+        title: "My first post",
+        text: "This is a short introduction to my new blog.",
+        url: "posts/first-post.html"
+      },
+      {
+        date: "2026-08-20",
+        dateText: "August 20, 2026",
+        title: "Keep it simple",
+        text: "A blog does not need comments, ads, or complicated software.",
+        url: "posts/keep-it-simple.html"
+      }
+    ];
+
+    function createPost(post) {
+      return `
+        <article class="post">
+          <time datetime="${post.date}">${post.dateText}</time>
+          <h2><a href="${post.url}">${post.title}</a></h2>
+          <p>${post.text}</p>
+          <p><a href="${post.url}">Read post →</a></p>
+        </article>
+      `;
+    }
+
+    document.getElementById("posts").innerHTML =
+      posts.map(createPost).join("");
+  </script>
 </body>
 </html>
