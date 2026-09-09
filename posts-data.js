@@ -1,5 +1,25 @@
 const posts = [
   {
+    "slug": "pong",
+    "date": "2026-09-09",
+    "dateLabel": "09 Sept 2026",
+    "tags": [
+      "Learning",
+      "Pong"
+    ],
+    "title": "PONG",
+    "summary": "First Playable",
+    "cover": "one",
+    "content": [
+      {
+        "type": "unity",
+        "src": "../games/Pong1/index.html",
+        "title": "..",
+        "caption": ".."
+      }
+    ]
+  },
+  {
     "slug": "starting-point-no-turning-back-please",
     "date": "2026-09-02",
     "dateLabel": "02 Sept 2026",
