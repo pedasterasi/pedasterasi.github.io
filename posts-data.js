@@ -1,21 +1,67 @@
 const posts = [
   {
-    "slug": "pong",
+    "slug": "in-the-beningging-there-was-a-pong",
     "date": "2026-09-09",
     "dateLabel": "09 Sept 2026",
     "tags": [
       "Learning",
       "Pong"
     ],
-    "title": "PONG",
-    "summary": "First Playable",
+    "title": "In the Beningging, There was a Pong",
+    "summary": "Thought it will be easy",
     "cover": "one",
     "content": [
       {
+        "type": "heading",
+        "text": "Start with Basic"
+      },
+      {
+        "type": "p",
+        "text": "Many always said that if you want to be good at something, master the basic. Is it true? I am here to prove it right (or wrong?)"
+      },
+      {
+        "type": "heading",
+        "text": "What To Do?"
+      },
+      {
+        "type": "p",
+        "text": "I found the link [link: 20 Games Challenge | https://20_games_challenge.gitlab.io/games/] and the first thought was this is gonna be easy (overestimating one self), but I discover many challenge, whether they are easy problems or easier problems. I'm trying to not depend on AI help, i only take advantage of it, so I used it to replace reading the documentation, but I try to think about game logic using my mighty logic."
+      },
+      {
+        "type": "heading",
+        "text": "Design"
+      },
+      {
+        "type": "p",
+        "text": "As I try to pretend that I am an organized and good-planner guy, I draw something before doing it (which I could just not to do it but it looks cool thou)"
+      },
+      {
+        "type": "image",
+        "src": "../images/pong_design.png",
+        "alt": "Pong Design",
+        "caption": "Pong Design"
+      },
+      {
+        "type": "p",
+        "text": "After many years of watching tutorials (I am a professional Tutorial watcher), I try to build stuff without any help. Of course without hands-on, we thought that we couldn't do thing, which was correct, until 10 minutes later when i just decided that I must think I am a good Game Developer. So I realize our mind is who we are. ??. \nThe biggest challenge for me is to decide how the AI move (normal AI, not that bla bla AGI LLM jackson Huang stuff) so I just decide simple movement from AI, which is just go the y position of the ball when it hits the middle while moving randomly whether middle-up or middle-down if it is in player side. And somehow, like magic, it looks intelligent (for me)."
+      },
+      {
+        "type": "p",
+        "text": "#YOU CAN PLAY THISSSSS"
+      },
+      {
         "type": "unity",
-        "src": "../games/Pong1/index.html",
+        "src": "../games/Pong/index.html",
         "title": "..",
         "caption": ".."
+      },
+      {
+        "type": "heading",
+        "text": "Update Later"
+      },
+      {
+        "type": "p",
+        "text": "Polish and make it better and cooler later, too lazy right now"
       }
     ]
   },
