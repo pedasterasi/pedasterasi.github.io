@@ -25,7 +25,16 @@ const posts = [
       },
       {
         "type": "p",
-        "text": "I found the link [link: 20 Games Challenge | https://20_games_challenge.gitlab.io/games/] and the first thought was this is gonna be easy (overestimating one self), but I discover many challenge, whether they are easy problems or easier problems. I'm trying to not depend on AI help, i only take advantage of it, so I used it to replace reading the documentation, but I try to think about game logic using my mighty logic."
+        "text": "I found the link"
+      },
+      {
+        "type": "link",
+        "label": "20 Games Challenge",
+        "url": "https://20_games_challenge.gitlab.io/games/"
+      },
+      {
+        "type": "p",
+        "text": "and the first thought was this is gonna be easy (overestimating one self), but I discover many challenge, whether they are easy problems or easier problems. I'm trying to not depend on AI help, i only take advantage of it, so I used it to replace reading the documentation, but I try to think about game logic using my mighty logic."
       },
       {
         "type": "heading",
@@ -37,7 +46,7 @@ const posts = [
       },
       {
         "type": "image",
-        "src": "../images/pong_design.png",
+        "src": "../images/pong_design.jpg",
         "alt": "Pong Design",
         "caption": "Pong Design"
       },
