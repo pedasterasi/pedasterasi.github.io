@@ -63,7 +63,9 @@ const posts = [
         "type": "p",
         "text": "Polish and make it better and cooler later, too lazy right now"
       }
-    ]
+    ],
+    "image": "images/pong_ss.png",
+    "imageAlt": ""
   },
   {
     "slug": "starting-point-no-turning-back-please",
