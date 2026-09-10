@@ -27,13 +27,13 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Pong_finish.data",
-        frameworkUrl: "Build/Pong_finish.framework.js",
-        codeUrl: "Build/Pong_finish.wasm",
+        dataUrl: "Build/Pong_finish.data.gz",
+        frameworkUrl: "Build/Pong_finish.framework.js.gz",
+        codeUrl: "Build/Pong_finish.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "PedasTerasi",
         productName: "Pong",
-        productVersion: "1.2",
+        productVersion: "1.0",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       }).then((unityInstance) => {
