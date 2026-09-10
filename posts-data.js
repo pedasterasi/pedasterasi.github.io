@@ -1,5 +1,22 @@
 const posts = [
   {
+    "slug": "asd",
+    "date": "2026-09-10",
+    "dateLabel": "10 Sept 2026",
+    "tags": [],
+    "title": "asd",
+    "summary": "asdasd",
+    "cover": "one",
+    "content": [
+      {
+        "type": "unity",
+        "src": "../games/Pong/index.html",
+        "title": "title",
+        "caption": "optional caption"
+      }
+    ]
+  },
+  {
     "slug": "in-the-beningging-there-was-a-pong",
     "date": "2026-09-09",
     "dateLabel": "09 Sept 2026",
@@ -61,8 +78,8 @@ const posts = [
       {
         "type": "unity",
         "src": "../games/Pong/index.html",
-        "title": "..",
-        "caption": ".."
+        "title": "bla",
+        "caption": "bla"
       },
       {
         "type": "heading",
