@@ -10,6 +10,7 @@ Library: C:\Users\kevin\Desktop\Pedas Terasi Studio\Unity\Pong\Temp\BurstOutput\
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\kevin\Desktop\Pedas Terasi Studio\Unity\Pong\Temp\Burst
+--debug=Full
 --generate-static-linkage-methods
 --key-folder=C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/PlaybackEngines/WebGLSupport
 --decode-folder=C:\Users\kevin\Desktop\Pedas Terasi Studio\Unity\Pong\Library\Burst
@@ -127,6 +128,7 @@ Library: C:\Users\kevin\Desktop\Pedas Terasi Studio\Unity\Pong\Temp\BurstOutput\
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\kevin\Desktop\Pedas Terasi Studio\Unity\Pong\Temp\Burst
+--debug=Full
 --generate-static-linkage-methods
 --key-folder=C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/PlaybackEngines/WebGLSupport
 --decode-folder=C:\Users\kevin\Desktop\Pedas Terasi Studio\Unity\Pong\Library\Burst
@@ -168,6 +170,7 @@ Library: C:\Users\kevin\Desktop\Pedas Terasi Studio\Unity\Pong\Temp\BurstOutput\
 --float-mode=Fast
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\kevin\Desktop\Pedas Terasi Studio\Unity\Pong\Temp\Burst
+--debug=Full
 --generate-static-linkage-methods
 --key-folder=C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/PlaybackEngines/WebGLSupport
 --decode-folder=C:\Users\kevin\Desktop\Pedas Terasi Studio\Unity\Pong\Library\Burst

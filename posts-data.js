@@ -42,7 +42,7 @@ const posts = [
       },
       {
         "type": "p",
-        "text": "As I try to pretend that I am an organized and good-planner guy, I draw something before doing it (which I could just not to do it but it looks cool thou)"
+        "text": "As I tried to pretend that I am an organized and good-planner guy, I drew something before doing it (which I could just not do but it looks cool thou)"
       },
       {
         "type": "image",
@@ -52,7 +52,7 @@ const posts = [
       },
       {
         "type": "p",
-        "text": "After many years of watching tutorials (I am a professional Tutorial watcher), I try to build stuff without any help. Of course without hands-on, we thought that we couldn't do thing, which was correct, until 10 minutes later when i just decided that I must think I am a good Game Developer. So I realize our mind is who we are. ??. \nThe biggest challenge for me is to decide how the AI move (normal AI, not that bla bla AGI LLM jackson Huang stuff) so I just decide simple movement from AI, which is just go the y position of the ball when it hits the middle while moving randomly whether middle-up or middle-down if it is in player side. And somehow, like magic, it looks intelligent (for me)."
+        "text": "After many years of watching tutorials (I am a professional Tutorial watcher), I try to build stuff without any help. I couldn't start, until 10 minutes later when I just decided that I must think I am a good Game Developer. So, I realize our mind is who we are.    ??. ???\nThe biggest challenge for me is to decide how the AI move (normal AI, not that bla bla AGI LLM jackson Huang stuff) so I just decide simple movement from AI, which is just go the y position of the ball when it hits the middle while moving randomly whether middle-up or middle-down if it is in player side. And somehow, like magic, it looks intelligent (for me)."
       },
       {
         "type": "p",
