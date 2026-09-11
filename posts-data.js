@@ -61,8 +61,14 @@ const posts = [
       {
         "type": "unity",
         "src": "../games/Pong/index.html",
-        "title": "bla",
-        "caption": "bla"
+        "title": "PONG",
+        "caption": "PONG"
+      },
+      {
+        "type": "unity",
+        "src": "../games/Pongv/index.html",
+        "title": "PONG",
+        "caption": "PONG"
       },
       {
         "type": "heading",
